@@ -1,0 +1,157 @@
+.likers
+{
+	opacity: 0;
+	text-align: left;
+	color: #FAFAFA;
+	font-size: 12px;
+	z-index: 1;
+	position: absolute;
+	padding: 5px;
+	padding-bottom: 3px;
+	display: block;
+	border-radius: 2px;
+	background-color: #212121;
+	bottom: 25px;
+	font-weight: 300;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: cubic-bezier(0.4, 0.0, 0.2, 1)	opacity 0.2s;
+	-webkit-transition: cubic-bezier(0.4, 0.0, 0.2, 1)	opacity 0.2s;
+	-moz-transition: cubic-bezier(0.4, 0.0, 0.2, 1)	opacity 0.2s;
+	-o-transition: cubic-bezier(0.4, 0.0, 0.2, 1)	opacity 0.2s;
+	min-width: 30px;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.like_counter:hover .likers
+{
+	opacity: 1;
+	transition: cubic-bezier(0.0, 0.0, 0.2, 1) opacity 0.2s;
+	-webkit-transition: cubic-bezier(0.0, 0.0, 0.2, 1) opacity 0.2s;
+	-moz-transition: cubic-bezier(0.0, 0.0, 0.2, 1) opacity 0.2s;
+	-o-transition: cubic-bezier(0.0, 0.0, 0.2, 1) opacity 0.2s;
+}
+
+.likers p
+{
+	margin-bottom: 2px;
+}
+
+.creation_date
+{
+	position: absolute;
+	right: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 11px;
+	margin-top: 7px;
+	color: #757575;
+}
+
+.creator_name
+{
+	position: absolute;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #424242;
+	padding-left: 10px;
+	margin-top: 5px;
+}
+
+.thumbcontainer
+{
+	overflow: hidden;
+	border-radius: 2px 2px 0px 0px;
+}
+
+.gallery
+{
+	display: inline-block;
+	text-align: center;
+	max-width: 1500px;
+}
+
+.gallery_entry
+{
+	background: #fff;
+	border-radius: 2px;
+	display: inline-block;
+	height: 220px;
+	margin: 1rem;
+	position: relative;
+	width: 200px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	vertical-align: top;
+}
+
+.like_btn
+{
+	position: absolute;
+	left: 10px;
+	margin-top: 37px;
+	color: #616161;
+	cursor: pointer;
+	-webkit-transition: color .15s ease-in;
+	-moz-transition: color .15s ease-in;
+	-o-transition: color .15s ease-in;
+	transition: color .15s ease-in;
+}
+
+.liked
+{
+	color: #1565C0;
+}
+
+.like_counter
+{
+	position: absolute;
+	margin-top: 41px;
+	left: 38px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #424242;
+}
+
+.comment_icon
+{
+	position: absolute;
+	margin-top: 37px;
+	left: 75px;
+	color: #616161;
+}
+
+.comment_counter
+{
+	position: absolute;
+	margin-top: 41px;
+	left: 103px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: #424242;
+}
+
+.del_btn
+{
+	position: absolute;
+	right: 10px;
+	margin-top: 37px;
+	color: #616161;
+	cursor: pointer;
+	-webkit-transition: color .15s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-moz-transition: color .15s cubic-bezier(0.4, 0.0, 0.2, 1);
+	-o-transition: color .15s cubic-bezier(0.4, 0.0, 0.2, 1);
+	transition: color .15s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.del_btn:hover
+{
+	color: #C62828;
+}
+
+@media screen and (max-width: 720px)
+{
+	.gallery_entry
+	{
+		margin: 7px 1px;
+	}
+}

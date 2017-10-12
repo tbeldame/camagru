@@ -1,0 +1,167 @@
+.card
+{
+	position: relative;
+	display: inline-block;
+	background-color: #FFF;
+	border-radius: 2px;
+	overflow: hidden;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	max-width: 400px;
+	width: 80%;
+}
+
+.card_title
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	text-align: left;
+	color: #FFF;
+	font-weight: 400;
+	background-color: #512DA8;
+	padding: 25px;
+}
+
+.bot_btns
+{
+	text-align: center;
+	margin: 0px 0 10px 0;
+}
+
+.account_btn
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #512DA8;
+	display: inline-block;
+	padding: 9px 10px;
+	transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-moz-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-webkit-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-o-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+}
+
+.account_btn:hover
+{
+}
+
+.user_form
+{
+	text-align: center;
+}
+
+.field
+{
+	margin: 30px 0;
+	font-size: 0px;
+}
+
+.user_field
+{
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	width: 200px;
+	border: none;
+	padding: 10px 0;
+	border-bottom: solid 1px #512DA8;
+	transition: background-position 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	-webkit-transition: background-position 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	-moz-transition: background-position 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	-o-transition: background-position 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #512DA8 4%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #512DA8 4%);
+	background-position: -200px 0;
+	background-size: 200px 100%;
+	background-repeat: no-repeat;
+	color: #424242;
+}
+
+.user_field:focus, user_field:valid
+{
+	box-shadow: none;
+	outline: none;
+	background-position: 0 0;
+}
+
+.user_btn
+{
+	position: relative;
+	display: inline-block;
+	border-radius: 2px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	width: 200px;
+	padding: 14px 0px;
+	color: #FFF;
+	background-color: #512DA8;
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: 25px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-webkit-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-moz-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-o-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+}
+
+.user_btn:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.home_btns
+{
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.home_btn
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	background-color: #512DA8;
+	display: inline-block;
+	color: #FFF;
+	padding: 17px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 2px;
+	margin: 10px 20px;
+	cursor: pointer;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-webkit-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-moz-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-o-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+}
+
+.home_btn:hover
+{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.settings_btn
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #F44336;
+	display: inline-block;
+	padding: 11px 20px;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-webkit-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-moz-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-o-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+}
+
+.settings_btn:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

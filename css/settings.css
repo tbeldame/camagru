@@ -1,0 +1,150 @@
+.settings
+{
+	position: relative;
+	display: inline-block;
+	font-size: 0;
+	font-family: 'Roboto', sans-serif;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.setting_title
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	font-size: 25px;
+	color: #212121;
+	font-weight: 300;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.setting_title:first-child
+{
+	margin-top: 10px;
+}
+
+.setting
+{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 2px 0;
+}
+
+.setting_text
+{
+	position: relative;
+	display: inline-block;
+	font-size: 15px;
+	color: #424242;
+	margin-right: 10px;
+}
+
+.notif_switch
+{
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	top: 8px;
+}
+
+.switch
+{
+	position: relative;
+	background-color: #BDBDBD;
+	width: 40px;
+	height: 18px;
+	border-radius: 15px;
+	transition: background-color cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-webkit-transition: background-color cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-moz-transition: background-color cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-o-transition: background-color cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	cursor: pointer;
+}
+
+.no_highlight
+{
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.switch_circle
+{
+	position: relative;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background-color: #FFF;
+	top: -2px;
+	left: -2px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.16), 0 3px 5px rgba(0,0,0,0.23);
+	transition: left cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s, background-color cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-webkit-transition: left cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s, background-color cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-moz-transition: left cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s, background-color cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-o-transition: left cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s, background-color cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+}
+
+.switch_input:checked + .notif_switch .switch
+{
+	background-color: #9575CD;
+}
+
+.switch_input:checked + .notif_switch .switch_circle
+{
+	left: 22px;
+	background-color: #512DA8;
+}
+
+.color_preview
+{
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	top: 4px;
+	border-radius: 50px;
+	background-color: #FFF;
+	margin-left: 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.color_input
+{
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	width: 70px;
+	border: none;
+	padding: 5px 0;
+	border-bottom: solid 1px #512DA8;
+	transition: background-position 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	-webkit-transition: background-position 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	-moz-transition: background-position 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	-o-transition: background-position 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #512DA8 4%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #512DA8 4%);
+	background-position: -200px 0;
+	background-size: 200px 100%;
+	background-repeat: no-repeat;
+	color: #424242;
+}
+
+.color_input:focus
+{
+	box-shadow: none;
+	outline: none;
+	background-position: 0 0;
+
+}
+
+.rainbow_back {
+	background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,violet);
+	background: -moz-linear-gradient(left,red,orange,yellow,green,blue,violet);
+	background: -o-linear-gradient(left,red,orange,yellow,green,blue,violet);
+	background: linear-gradient(to right, red,orange,yellow,green,blue,violet); 
+}

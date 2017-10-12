@@ -1,0 +1,346 @@
+.picture
+{
+	max-width: calc(100% - 2rem);
+	position: relative;
+	border-radius: 2px;
+	vertical-align: top;
+	background-color: #FFF;
+	display: inline-block;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin: 1rem;
+}
+
+.pic_container
+{
+	overflow: hidden;
+	border-radius: 2px 2px 0 0;
+}
+
+.pic_img
+{
+	width: 100%;
+}
+
+.infos
+{
+	display: inline-block;
+	height: 90px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.creator
+{
+    position: absolute;
+	left: 0;
+    font-weight: 400;
+    color: #424242;
+    font-size: 25px;
+    margin: 10px 0 0 15px;
+}
+
+.date
+{
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #424242;
+    margin: 15px 15px 0 0;
+}
+
+.like_btn
+{
+	position: absolute;
+    left: 0;
+    margin: 55px 0 0 15px;
+    color: #616161;
+	cursor: pointer;
+    -webkit-transition: color .15s ease-in;
+    -moz-transition: color .15s ease-in;
+    -o-transition: color .15s ease-in;
+    transition: color .15s ease-in;
+}
+
+.liked
+{
+	color: #1565C0;
+}
+
+.like_counter
+{
+    position: absolute;
+    left: 0;
+    margin: 57px 0 0 50px;
+    font-size: 19px;
+    color: #424242;
+}
+
+.likers
+{
+    opacity: 0;
+    text-align: left;
+    color: #FAFAFA;
+    font-size: 12px;
+    z-index: 1;
+    position: absolute;
+    padding: 5px;
+    padding-bottom: 3px;
+    display: block;
+    border-radius: 2px;
+    background-color: #212121;
+    bottom: 25px;
+    font-weight: 300;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: cubic-bezier(0.4, 0.0, 0.2, 1)  opacity 0.2s;
+    -webkit-transition: cubic-bezier(0.4, 0.0, 0.2, 1)  opacity 0.2s;
+    -moz-transition: cubic-bezier(0.4, 0.0, 0.2, 1)  opacity 0.2s;
+    -o-transition: cubic-bezier(0.4, 0.0, 0.2, 1)  opacity 0.2s;
+    min-width: 30px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.like_counter:hover .likers
+{
+	opacity: 1;
+}
+
+.del_btn
+{
+    position: absolute;
+    right: 0;
+    margin: 55px 15px 0px 0px;
+    color: #616161;
+	cursor: pointer;
+    -webkit-transition: color .15s ease-in;
+    -moz-transition: color .15s ease-in;
+    -o-transition: color .15s ease-in;
+    transition: color .15s ease-in;
+}
+
+.del_btn:hover
+{
+	color: #C62828;
+}
+
+.comment_area
+{
+	position: relative;
+	display: inline-block;
+	margin: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0;
+	background-color: #FFF;
+	border-radius: 2px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	width: calc(100% - 500px - 4rem);
+	min-width: 500px;
+}
+
+.new_comment
+{
+	width: calc(97% - 20px);
+	position: relative;
+	padding: 10px;
+	padding-top: 25px;
+	display: inline-block;
+	border-bottom: 1px solid #BDBDBD;
+}
+
+.new_com_txt
+{
+	position: relative;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	width: calc(98% - 90px);
+	border: none;
+    outline: none;
+	resize: none;
+	font-size: 16px;
+	border-bottom: solid 1px #512DA8;
+	transition: background-size 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+	-webkit-transition: background-size 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+	-moz-transition: background-size 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+	-o-transition: background-size 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) calc(100% - 1px), #512DA8 4%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) calc(100% - 1px), #512DA8 4%);
+	background-size: 0% 100%;
+	background-repeat: no-repeat;
+    overflow: auto;
+	color: #424242;
+}
+
+.new_com_txt:focus
+{
+	outline:none;
+	background-size: 100% 100%;
+}
+
+.com_length
+{
+	position: relative;
+	display: inline-block;
+	padding-top: 5px;
+	text-align: left;
+	opacity: 0;
+	color: #616161;
+	font-size: 12px;
+	width: 100%;
+	height: 10px;
+	-webkit-font-smoothing: auto;
+	transition: opacity cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-webkit-transition: opacity cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-moz-transition: opacity cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-o-transition: opacity cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	transition: color cubic-bezier(0.4, 0.0, 0.2, 1) 0.1s;
+	-webkit-transition: color cubic-bezier(0.4, 0.0, 0.2, 1) 0.1s;
+	-moz-transition: color cubic-bezier(0.4, 0.0, 0.2, 1) 0.1s;
+	-o-transition: color cubic-bezier(0.4, 0.0, 0.2, 1) 0.1s;
+}
+
+.too_long
+{
+	color: #F44336;
+}
+
+.post_com
+{
+	outline: none;
+	vertical-align: middle;
+	position: relative;
+	display: inline-block;
+	margin: -45px 1% 0 1%;
+	height: 30px;
+	width: 90px;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #512DA8;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-webkit-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-moz-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
+	-o-transition: box-shadow cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;v
+}
+
+.post_com:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.comments
+{
+	position: relative;
+	display: inline-block;
+}
+
+.comment
+{
+	position: relative;
+	padding: 10px;
+	width: calc(97% - 20px);
+	border-top: 1px solid #BDBDBD;
+	display: inline-block;
+}
+
+.comment:first-child
+{
+	border-top: none;
+}
+
+.com_author
+{
+	display: inline-block;
+	position: relative;
+	width: 50%;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 400;
+	color: #212121;
+}
+
+.com_date
+{
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+	font-size: 13px;
+	font-weight: 300;
+	color: #424242;
+	right: 0;
+}
+
+.com_txt
+{
+	position: relative;
+	font-size: 16px;
+	width: 95%;
+	word-wrap: break-word;
+	display: inline-block;
+	text-align: left;
+	color: #424242;
+	font-weight: 300;
+	margin-top: 12px;
+}
+
+.del_com
+{
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	cursor: pointer;
+	width: 5%;
+	text-align: right;
+	color: #616161;
+	margin-bottom: -5px;
+    transition: color 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    -webkit-transition: color 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    -moz-transition: color 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    -o-transition: color 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.del_com .material-icons
+{
+	float: right;
+}
+
+.del_com:hover
+{
+	color: #C62828;
+}
+
+.fb_btn
+{
+	position: absolute;
+	left: 0;
+	margin-top: 56px;
+	margin-left: 85px;
+}
+
+.tw_btn
+{
+	position: absolute;
+	left: 0;
+	margin-top: 56px;
+	margin-left: 165px;
+}
+
+@media screen and (max-width: 1300px)
+{
+	.comment_area
+	{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 550px)
+{
+	.comment_area
+	{
+		width: calc(100% - 2rem);
+		min-width: 0;
+	}
+}

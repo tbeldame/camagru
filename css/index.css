@@ -1,0 +1,31 @@
+.home_txt
+{
+	margin-top: 90px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color: #616161;	
+	font-weight: 100;
+	margin-bottom: 70px;
+}
+
+.home_greet
+{
+	margin-top: 5%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color: #616161;	
+	font-weight: 100;
+	margin-bottom: 10%;
+}
+
+.home_info
+{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 0 10px;	
+	text-align: center;
+	color: #424242;
+}
